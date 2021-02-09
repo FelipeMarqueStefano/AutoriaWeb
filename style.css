@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#overlay img {
+    margin-top: 150px;
+    margin-left: 360px;
+}
+
+body {
+    background-image: url(img/background.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    /*animation-name: transicao;
+    animation-duration: 10s;*/
+}
+
+body h1 {
+    margin: 20px;
+    margin-bottom: 40px;
+    padding: 10px;
+    border-left: 7px solid #9c9c9c;
+    background-color: rgb(238, 238, 238, 0.7);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body p {
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    text-align: justify;
+    text-indent: 50px;
+    /*text-transform: capitalize;
+    font-weight: lighter;*/
+    font-size: 20px;
+    border-left: 7px solid;
+}
+
+/*@keyframes mymove {
+    from {background-color: #eee; border-color: #9c9c9c;}
+    to {background-color: ; border-color: #9d1e1e;}
+}*/
+
+body ul {
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    padding-left: 40px;
+    border-left: 7px solid #9c9c9c;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: square;
+}
+
+body ul h4 {
+    padding-bottom: 10px;
+}
+
+#menu {
+    background-color: whitesmoke;
+    font-size: 40px;
+    font-family: monospace;
+    padding: 10px;
+    padding-left: 20px;
+    /*position: fixed;*/
+}
+
+footer {
+    background-color: whitesmoke;
+}
+
+footer h2 {
+    margin: 20px;
+    margin-bottom: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer h3 {
+    margin: 20px;
+    margin-bottom: -21px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.colors {
+    margin: 30px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#color_form {
+    padding-bottom: 20px;
+}
+
+#link a {
+    text-decoration: none;
+}
+
+#portal {
+    color: rgb(31, 192, 10);
+}
+
+#ifrn {
+    color: rgb(255, 27, 27);
+}
+
+#link a:hover {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+/*@keyframes transicao {
+    from {background-color: black;}
+    to {background-color: white;}
+}*/

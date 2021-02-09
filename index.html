@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoriaWeb</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body id="backs">
+    <header>
+        <div id="menu">
+            <h4>Autoria Web</h4>
+        </div>
+        <h1 id="h1">Aula de Autoria Web 03!</h1>
+    </header>
+    <div id="overlay">
+        <img src="https://image.slidesharecdn.com/lr004218-orgulholgbtqv31-180629212733/95/melhore-o-pequeno-manual-da-propaganda-diversa-1-638.jpg?cb=1530307683"
+            alt="Propaganda">
+        <button onclick="off()">X</button>
+    </div>
+    <div class="paragraph_0">
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequatur quo doloremque, commodi
+            molestiae cupiditate laboriosam quos cum dolorem atque, delectus provident amet est soluta dicta possimus in
+            unde nemo?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Sunt placeat sapiente fugiat ducimus saepe, veniam quidem error cum labore quia tempore
+            vero
+            earum eaque ipsum omnis iusto sint fuga ratione.</p>
+    </div>
+    <div class="paragraph_1">
+        <p id="p2">Ipsam magni cupiditate corporis magnam! Quod, beatae, eius impedit quia inventore rerum voluptate
+            consequuntur error quidem ad similique facilis provident odit illo?Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, laboriosam quasi. Vero,
+            incidunt repellat? Labore blanditiis rem odit eligendi! Tempore accusamus quo vero alias veritatis molestias
+            perferendis excepturi adipisci necessitatibus.</p>
+    </div>
+    <div class="paragraph_2">
+        <p id="p3"> Eaque similique, officiis dolorem quo quam minima error magni assumenda laboriosam dignissimos
+            aliquid?
+            Aspernatur accusantium, autem numquam ipsum assumenda illum a nemo? Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Itaque, nisi fugit consequuntur nihil ipsa magnam voluptatibus perferendis necessitatibus
+            sint
+            porro ducimus dicta sit dolores sed earum commodi autem quam aliquam.</p>
+    </div>
+    <div id="list01">
+        <ul>
+            <h4>Matérias</h4>
+            <li>Autoria Web</li>
+            <li>PABD</li>
+            <li>Redes</li>
+            <li>Manutenção</li>
+            <li>Sociologia</li>
+        </ul>
+    </div>
+    <div class="paragraph_3">
+        <p id="link">Qualquer Dúvida, Acesse o <a href="https://portal.ifrn.edu.br/" target="_blank"><strong><span
+                        id="portal">PORTAL</span> <span id="ifrn">IFRN!<span></span></strong></a></p>
+    </div>
+
+    <footer id="roda_pe">
+        <hr>
+        <h2>Estilize Sua Interface</h2>
+        <h3>- Cor Dos Blocos</h3>
+        <div class="form">
+            <form class="colors" name="select_color">
+                <div>
+                    <input type="radio" name="color" value="Red" onclick="func();">
+                    <label for="vermelho">Vermelho</label><br>
+                </div>
+                <div>
+                    <input type="radio" name="color" value="blue" onclick="func();">
+                    <label for="azul">Azul</label>
+                </div>
+                <div>
+                    <input type="radio" name="background" onclick="dark();">
+                    <label id="dark">Dark Mode</label>
+                </div>
+                <div id="color_form">
+                    <input type="radio" name="background" onclick="light();">
+                    <label id="light">Light Mode</label>
+                </div>
+            </form>
+        </div>
+    </footer>
+</body>
+<script>
+    var x = window.document.getElementById('p1')
+    x.style.backgroundColor = 'rgb(238, 238, 238, 0.7)'
+    x.style.borderColor = '#9c9c9c'
+
+    var y = window.document.getElementById('p2')
+    y.style.backgroundColor = 'rgb(238, 238, 238, 0.7)'
+    y.style.borderColor = '#9c9c9c'
+
+    var z = window.document.getElementById('p3')
+    z.style.backgroundColor = 'rgb(238, 238, 238, 0.7)'
+    z.style.borderColor = '#9c9c9c'
+
+    var a = window.document.getElementById('link')
+    a.style.backgroundColor = 'rgb(238, 238, 238, 0.7)'
+    a.style.borderColor = '#9c9c9c'
+
+    var c = window.document.getElementsByTagName('ul')[0]
+    c.style.backgroundColor = 'rgb(238, 238, 238, 0.7)'
+    c.style.borderColor = '#9c9c9c'
+
+    /*var a = window.document.getElementsByTagName('p')[3]
+    a.style.backgroundColor = '#eee'
+    a.style.borderColor = '#00458b'*/
+
+    function func() {
+        var all = document.getElementsByName("color");
+        if (all[0].checked) {
+            var h = window.document.getElementById('h1')
+            h.style.backgroundColor = 'rgb(255, 219, 219, 0.7)'
+            h.style.borderColor = '#9d1e1e'
+
+            var x = window.document.getElementById('p1')
+            x.style.backgroundColor = 'rgb(255, 219, 219, 0.7)'
+            x.style.borderColor = '#9d1e1e'
+
+            var y = window.document.getElementById('p2')
+            y.style.backgroundColor = 'rgb(255, 219, 219, 0.7)'
+            y.style.borderColor = '#9d1e1e'
+
+            var z = window.document.getElementById('p3')
+            z.style.backgroundColor = 'rgb(255, 219, 219, 0.7)'
+            z.style.borderColor = '#9d1e1e'
+
+            var a = window.document.getElementById('link')
+            a.style.backgroundColor = 'rgb(255, 219, 219, 0.7)'
+            a.style.borderColor = '#9d1e1e'
+
+            var c = window.document.getElementsByTagName('ul')[0]
+            c.style.backgroundColor = 'rgb(255, 219, 219, 0.7)'
+            c.style.borderColor = '#9d1e1e'
+        }
+        else if (all[1].checked) {
+            var h = window.document.getElementById('h1')
+            h.style.backgroundColor = 'rgb(219, 244, 255, 0.7)'
+            h.style.borderColor = '#1e7f9d'
+
+            var x = window.document.getElementById('p1')
+            x.style.backgroundColor = 'rgb(219, 244, 255, 0.7)'
+            x.style.borderColor = '#1e7f9d'
+
+            var y = window.document.getElementById('p2')
+            y.style.backgroundColor = 'rgb(219, 244, 255, 0.7)'
+            y.style.borderColor = '#1e7f9d'
+
+            var z = window.document.getElementById('p3')
+            z.style.backgroundColor = 'rgb(219, 244, 255, 0.7)'
+            z.style.borderColor = '#1e7f9d'
+
+            var a = window.document.getElementById('link')
+            a.style.backgroundColor = 'rgb(219, 244, 255, 0.7)'
+            a.style.borderColor = '#1e7f9d'
+
+            var c = window.document.getElementsByTagName('ul')[0]
+            c.style.backgroundColor = 'rgb(219, 244, 255, 0.7)'
+            c.style.borderColor = '#1e7f9d'
+        }
+    }
+
+    function dark() {
+        var b = window.document.getElementById("roda_pe")
+        b.style.backgroundColor = 'rgb(27, 27, 27)'
+        b.style.color = 'white'
+        var d = window.document.getElementById("menu")
+        d.style.backgroundColor = 'rgb(27, 27, 27)'
+        d.style.color = 'white'
+
+    }
+    function light() {
+        var b = window.document.getElementById("roda_pe")
+        b.style.backgroundColor = 'whitesmoke'
+        b.style.color = 'black'
+        var d = window.document.getElementById("menu")
+        d.style.backgroundColor = 'whitesmoke'
+        d.style.color = 'black'
+    }
+
+    function on() {
+        window.document.getElementById('overlay').style.display = "block"
+    }
+
+    function off() {
+        window.document.getElementById('overlay').style.display = "none"
+    }
+
+</script>
+
+</html>
